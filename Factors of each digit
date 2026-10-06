@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+        int num = 1234;
+
+        while (num > 0) {
+            int digit = num % 10;
+
+            for (int i = 1; i <= digit; i++) {
+                if (digit % i == 0) {
+                    System.out.println("The factor of " + digit + " is " + i);
+                }
+            }
+
+            num = num / 10;
+        }
+    }
+}
