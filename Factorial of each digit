@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        int num = 1234;
+        int factorial = 1;
+
+        while (num > 0) {
+            int digit = num % 10;
+
+            for (int i = 1; i <= digit; i++) {
+                factorial = factorial * i;
+            }
+
+            System.out.println("Factorial of " + digit + " is " + factorial);
+
+            factorial = 1;
+            num = num / 10;
+        }
+    }
+}
